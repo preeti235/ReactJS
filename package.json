@@ -1,0 +1,36 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preeti235/ReactJS.git"
+  },
+  "author": "sumana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preeti235/ReactJS/issues"
+  },
+  "homepage": "https://github.com/preeti235/ReactJS#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browserify": "^14.0.0",
+    "flux": "^3.1.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-open": "^2.0.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-router": "^3.0.2",
+    "reactify": "^1.1.1",
+    "toastr": "^2.1.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
