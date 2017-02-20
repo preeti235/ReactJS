@@ -62,9 +62,22 @@ gulp.task('css', function(){
 		
 });
 
+gulp.task('images', function(){
+	gulp.src(config.paths.images)
+		.pipe(gulp.dest(config.paths.dist+'/images'))
+		.pipe(connect.reload());
+		
+});
+
+gulp.task('lint', function(){
+	gulp.src(config.paths.js)
+		.pipe(lint({config: 'eslint.config.json'}))
+		.pipe(lint.format());
+		
+});
 gulp.task('watch', function(){
 	gulp.watch(config.paths.html,['html'])
 	gulp.watch(config.paths.js,['js']);
 	//gulp.watch(config.paths.js,['css']);
 });
-gulp.task('default',['html','js','css','open','watch']);
+gulp.task('default',['html','js','css','open','images','watch']);
